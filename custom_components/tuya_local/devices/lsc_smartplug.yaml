@@ -1,0 +1,40 @@
+name: Standard smartplug
+products:
+  - id: uekfgut3btdby31l
+    name: LSC Smart Plug-FR Aman-2022Q1
+primary_entity:
+  entity: switch
+  dps:
+    - id: 1
+      name: switch
+      type: boolean
+secondary_entities:
+  - entity: number
+    name: Timer
+    category: config
+    icon: "mdi:timer"
+    dps:
+      - id: 9
+        name: value
+        type: integer
+        range:
+          min: 0
+          max: 86400
+        mapping:
+          - scale: 0
+            step: 1
+  - entity: select
+    name: Restore power state
+    category: config
+    icon: "mdi:toggle-switch"
+    dps:
+      - id: 38
+        type: string
+        name: option
+        mapping:
+          - dps_val: "0"
+            value: "Off"
+          - dps_val: "1"
+            value: "On"
+          - dps_val: "2"
+            value: Remember last state
