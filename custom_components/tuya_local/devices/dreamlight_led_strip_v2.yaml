@@ -45,6 +45,10 @@ primary_entity:
     - id: 47
       name: pixels
       type: integer
+    - id: 61
+      type: string
+      name: paint_colour_data
+      optional: true
 secondary_entities:
   - entity: number
     name: Timer
@@ -91,19 +95,3 @@ secondary_entities:
             value: "Thanksgiving"
           - dps_val: "AS4CSUlgAABkAGY8ADxJAB5k"
             value: "Spring fishing"
-  - entity: select
-    name: paint_color
-    icon: "mdi:palette-swatch"
-    category: config
-    dps:
-      - id: 61
-        type: string
-        name: option
-        optional: true
-        mapping:
-          - dps_val: "AAEAFAEAQQGZA7WBAg=="
-            value: "green-lemon"
-          - dps_val: "AAEAFAEAwgOsA+iBAg=="
-            value: "red-blue"
-          - dps_val: "AAEAFAEA2AL4A+iBAg=="
-            value: "green-blue"
