@@ -12,8 +12,6 @@ primary_entity:
       type: string
       name: color_mode
       mapping:
-        - dps_val: white
-          value: color_temp
         - dps_val: colour
           value: hs
         - dps_val: scene
@@ -47,10 +45,6 @@ primary_entity:
     - id: 47
       name: pixels
       type: integer
-    - id: 51
-      name: dreamlight_scene
-      type: string
-      optional: true
     - id: 61
       name: paint_colour_data
       type: string
@@ -73,4 +67,31 @@ secondary_entities:
           - scale: 60
             step: 60
           - dps_val: null
-  
+  - entity: select
+    name: Dreamlight
+    icon: "mdi:palette"
+    category: config
+    dps:
+      - id: 51
+        type: string
+        name: option
+        optional: true
+        mapping:
+          - dps_val: "AQ8KUlLgAABkABlkACJeACxbABRkAAxk"
+            value: "Late autumn"
+          - dps_val: "ASICYWHgAABkAAtkANlkACtkAJFkALlk"
+            value: "Christmas"
+          - dps_val: "AR4CZGRgAABkAQhLALEvAM1X"
+            value: "Trend"
+          - dps_val: "AQcCUVGAAABkAL9fAQBZAURgAAFk"
+            value: "Sea flame"
+          - dps_val: "AR0EZGRgAABkANdcALxTADceACw/AWE/"
+            value: "Party"
+          - dps_val: "AQMKUlLgAABkAMFhALQwALVSAMRj"
+            value: "Iceland blue"
+          - dps_val: "ASADQ0NgAABkALc1AJtUAM1h"
+            value: "Meditatie"
+          - dps_val: "ASUKSEhgAABkAD1kAQxbALpJABdh"
+            value: "Thanksgiving"
+          - dps_val: "AS4CSUlgAABkAGY8ADxJAB5k"
+            value: "Spring fishing"
