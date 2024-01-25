@@ -4,6 +4,8 @@ products:
     name: Nexxt 220v smartplug
   - id: 45gg9a0jfyzj1z1d
     name: Mini smart switch
+  - id: uekfgut3btdby31l
+    name: LSC Smart Plug-FR
 primary_entity:
   entity: switch
   dps:
